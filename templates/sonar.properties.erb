@@ -41,6 +41,10 @@ sonar.web.context:                        <%= @context_path %>
 sonar.web.javaOpts=<%= @web_java_opts %>
 <% end -%>
 
+<% if @ce_java_opts -%>
+sonar.ce.javaOpts=<%= @ce_java_opts %>
+<% end -%>
+
 <% if !@https.empty? -%>
 #-------------------
 # SonarQube Https Configuration
